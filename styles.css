@@ -50,7 +50,13 @@ header h1{margin:0 0 12px;font-size:20px}
 .cell.path{background:linear-gradient(180deg,#fbfdff,#f0f6ff)}
 .cell.goal{background:linear-gradient(180deg,#fff1d0,#fff7e6);border:2px solid #f2c46b}
 .cell.start{background:linear-gradient(180deg,#e6fff2,#f1fff8);border:2px solid #8ae6b0}
+.cell.project{background:linear-gradient(180deg,#e3f2ff,#f0f8ff);border:1px solid #91c9f7}
+.cell.skillup{background:linear-gradient(180deg,#f3e8ff,#f9f3ff);border:1px solid #c299ff}
+.cell.client{background:linear-gradient(180deg,#fff5e6,#fffaf0);border:1px solid #ffb366}
+.cell.rest{background:linear-gradient(180deg,#e6fff9,#f0fffc);border:1px solid #66e0c9}
+.cell.challenge{background:linear-gradient(180deg,#ffe6e6,#fff5f5);border:1px solid #ff8080}
 .cell .cell-num{position:absolute;top:4px;left:6px;font-size:10px;color:#99a3b5}
+.cell .cell-type{position:absolute;top:4px;right:6px;font-size:16px}
 .pawn{
   width:18px;height:18px;border-radius:50%;
   display:inline-block;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.2);
@@ -69,6 +75,7 @@ header h1{margin:0 0 12px;font-size:20px}
 .playerCard{display:flex;align-items:center;gap:8px;padding:8px;border-radius:6px;background:#fbfdff;border:1px solid #eef4ff}
 .playerColor{width:18px;height:18px;border-radius:50%}
 .playerAttr{font-size:12px;color:var(--muted)}
+.playerAttr.skills{font-size:10px;margin-top:2px;color:#7c8ba0}
 
 #turnArea{margin-top:10px}
 #rollBtn{padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;cursor:pointer}
@@ -90,3 +97,8 @@ header h1{margin:0 0 12px;font-size:20px}
 .overlay-actions{display:flex;justify-content:flex-end;margin-top:12px}
 .overlay button{padding:8px 12px;border-radius:6px;border:0;background:var(--accent);color:#fff}
 .turn-indicator{font-weight:600}
+
+/* ゲーム結果表示 */
+.results{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.result-item{padding:12px;background:#f8fafc;border-radius:6px;border-left:4px solid var(--accent)}
+.result-rank{font-size:20px;margin-right:8px}
